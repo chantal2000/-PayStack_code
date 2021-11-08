@@ -117,5 +117,6 @@ span:hover {
 }
 
 nav {
-    background-color: yellow;
+    background-color: black;
+    color: white;
 }

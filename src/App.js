@@ -4,21 +4,17 @@ import Home from './components/Home/home';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import FetchApi from './components/API/FetchApi';
-// import About from './components/About/about';
 function App() {
     return ( <div className = "App">
         <Router>
         <nav>
         {/* <span className = "home"> <Link to = ""> Home </Link></span> */}
         <span> <Link to = "/FetchApi" > Movies </Link></span > 
-        { /* <span> <Link to = "/About" > About </Link></span > */ }
          </nav>  
          <Route path = ""exact component = { Home }/>
-           <Route path = "/FetchApi"exact component = { FetchApi }
-        />  { /* <Route path = "/About"exact component = { About }/>  */ }
+           <Route path = "/FetchApi"exact component = { FetchApi }/> 
          </Router>
           </div>
     );
 }
-
 export default App;

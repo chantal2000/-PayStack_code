@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
 import './FetchApi.css';
-
 function FetchApi() {
     const [data, setData] = useState([])
     const apiGet = () => {
@@ -28,12 +27,12 @@ function FetchApi() {
                       <th> Height </th>
                        </tr> <tr >
                     <td> {
-                        data.map((item) => <option key = {item.id}> {item.name} </option>)};
+                        data.map((item) => <option key = {item.id}> {item.name} </option>)}
                          </td>
-                          <td> {data.map((item) => <option key = {item.id} > {item.gender} </option>)};
+                          <td> {data.map((item) => <option key = {item.id} > {item.gender} </option>)}
                            </td> 
                             <td>{data.map((item)=><option key={item.id}>{item.height}</option >)
-                            }; 
+                            } 
                             </td>
                              </tr>
                               <tr>
@@ -41,7 +40,6 @@ function FetchApi() {
                           </thead>
                            </table> 
                            </div>
-
                         )
                     }
                     export default FetchApi
